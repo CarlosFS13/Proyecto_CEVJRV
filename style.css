@@ -45,6 +45,9 @@ input[type="radio"] {
 /* 
     Menú Móvil 
 */
+.logo{
+  width: 16px;
+}
 .mobile-container {
   margin: auto;
   background-color: #32322c;
@@ -379,6 +382,10 @@ footer a {
 }
 /* --------------  */
 
+#herramientas ul{
+  margin-top: 2rem;
+}
+
 @media (min-width: 820px) {
   .mobile-container {
     display: none;
@@ -387,6 +394,7 @@ footer a {
   .pc-container {
     display: flex;
   }
+ 
   :root{
     font-size: 2rem;
   }
@@ -402,6 +410,9 @@ footer a {
   /*
     Menú PC
   */
+  .logo{
+    width: 50px;
+  }
   .topnav {
     background-color: #10b5bf;
     display: flex;
@@ -447,7 +458,16 @@ footer a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+  #projects .project{
+    max-width: 15vw;
+  }
+  #projects .project p{
+    margin: 1rem;
+  }
+  #projects .project img{
+    max-width: 15vw;
   }
   /* --------------  */
 

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <title>CE VJ RV</title>
 </head>
 
 <body>
     <div class="mobile-container">
         <nav class="topnav">
-            <a href="index.html" class="active">Logo</a>
+            <a href="index.html" class="active"><img src="assets/images/logov2.png" alt="logo web" class="logo"></a>
             <ul id="myLinks">
-                <li><a href="gallery.html">GALERÍA</a></li>
-                <li><a href="curso.html">CURSO</a></li>
+                <li><a href="gallery.html" class="excluded">GALERÍA</a></li>
+                <li><a href="curso.html" class="excluded">CURSO</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSettings()"><i class="fa fa-cog"
+                            aria-hidden="true"></i></a></li>
+
             </ul>
             <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
                 <i class="fa fa-bars"></i>
@@ -26,12 +28,45 @@
 
     <div class="pc-container">
         <nav class="topnav">
-            <a href="index.html" class="active">Logo</a>
+            <a href="index.html" class="active"><img src="assets/images/logov2.png" alt="logo web" class="logo"></a>
             <ul class="button_list">
                 <li><a href="gallery.html">GALERÍA</a></li>
                 <li><a href="curso.html">CURSO</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSettings()"><i class="fa fa-cog"
+                            aria-hidden="true"></i></a></li>
             </ul>
         </nav>
+    </div>
+    <div class="settings" id="settings">
+        <div class="idiomas settings_div">
+            <div>
+                <input type="radio" id="es" name="idioma" value="es" checked>
+                <label for="es">Castellano</label>
+            </div>
+            <div>
+                <input type="radio" id="ca" name="idioma" value="ca">
+                <label for="ca">Valenciano</label>
+            </div>
+            <div>
+                <input type="radio" id="en" name="idioma" value="en">
+                <label for="en">Inglés</label>
+            </div>
+        </div>
+        <div class="temas settings_div">
+            <div>
+                <input type="radio" id="dark" name="tema" value="dark" checked>
+                <label for="dark">Oscuro</label>
+            </div>
+            <div>
+                <input type="radio" id="light" name="tema" value="light">
+                <label for="light">Claro</label>
+            </div>
+            <div>
+
+                <input type="radio" id="contrast" name="tema" value="contrast">
+                <label for="contrast">Alto Contraste</label>
+            </div>
+        </div>
     </div>
     <section class="accordion" id="filter_section">
         <a href="javascript:void(0);" class="icon" onclick="toggleFilterMenu()">
