@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>CE VJ RV</title>
+</head>
+
+<body>
+    <div class="mobile-container">
+        <nav class="topnav">
+            <a href="index.html" class="active">Logo</a>
+            <ul id="myLinks">
+                <li><a href="gallery.html">GALERÍA</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+
+    <div class="pc-container">
+        <nav class="topnav">
+            <a href="index.html" class="active">Logo</a>
+            <ul class="button_list">
+                <li><a href="gallery.html">GALERÍA</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="accordion" id="filter_section">
+        <a href="javascript:void(0);" class="icon" onclick="toggleFilterMenu()">
+            <i class="fa fa-filter"></i>
+        </a>
+        <div id="filter_options">
+            <input list="orderByFields" placeholder="Alfabético">
+            <datalist id="orderByFields">
+                <option value="Curso" />
+                <option value="Alfabético" />
+                <option value="Descargas" />
+            </datalist>
+            <a href="javascript:void(0);" class="icon" onclick="toggleFilterOrder()">
+                <i class="fa fa-arrow-up" id="order"></i>
+            </a>
+        </div>
+    </section>
+    <main id="gallery_main">
+        
+        <section id="projects">
+            <article class="project">
+                <div class="project_header">
+                    <h3>Salvatore II Pizzaiolo</h3>
+                </div>
+                <div class="project_img">
+                    <img src="assets/images/pizza.jpg" class="miniature" alt="pizzaiolo image"></img>
+                </div>
+                <div class="project_desc">
+                    <p>Ayúda a tu tío y reparte pizzas en este divertido runner!</p>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project_header">
+                    <h3>Salvatore II Pizzaiolo</h3>
+                </div>
+                <div class="project_img">
+                    <img src="assets/images/pizza.jpg" class="miniature" alt="pizzaiolo image"></img>
+                </div>
+                <div class="project_desc">
+                    <p>Ayúda a tu tío y reparte pizzas en este divertido runner!</p>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project_header">
+                    <h3>Salvatore II Pizzaiolo</h3>
+                </div>
+                <div class="project_img">
+                    <img src="assets/images/pizza.jpg" class="miniature" alt="pizzaiolo image"></img>
+                </div>
+                <div class="project_desc">
+                    <p>Ayúda a tu tío y reparte pizzas en este divertido runner!</p>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project_header">
+                    <h3>Salvatore II Pizzaiolo</h3>
+                </div>
+                <div class="project_img">
+                    <img src="assets/images/pizza.jpg" class="miniature" alt="pizzaiolo image"></img>
+                </div>
+                <div class="project_desc">
+                    <p>Ayúda a tu tío y reparte pizzas en este divertido runner!</p>
+                </div>
+            </article>
+        </section>
+        
+    </main>
+    <div id="page_selector">
+        <ul class="button_list">
+            <li><a href="">Anterior</a></li>
+            <li><a href="">Próxima</a></li>
+        </ul>
+
+    </div>
+    <footer>
+        <section id="footer_others">
+            <p><small>Correo: contacto@cdvjrv.es</small></p>
+            <p><small>Tlf: 659999336</small></p>
+            <p><small>Copyright 2024, Carlos Faus Salort</small></p>
+        </section>
+        <section id="footer_links">
+            <a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i> &#160;Instagram</a>
+            <a href="legal.html"> &#160; &#160; &#160;Política Legal y de Privacidad</a>
+        </section>
+    </footer>
+</body>
+<script src="js/action.js"></script>
+
+</html>
