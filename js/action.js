@@ -1,7 +1,12 @@
 function toggleMobileMenu() {
     var x = document.getElementById("myLinks");
+    var y = document.getElementById("settings");
+
     if (x.style.display === "block") {
       x.style.display = "none";
+      if (y.style.display === "flex") {
+        y.style.display = "none";
+      }
     } else {
       x.style.display = "block";
     }
@@ -24,5 +29,14 @@ function toggleMobileMenu() {
     } else {
       x.classList.remove("fa-arrow-down");
         x.classList.add("fa-arrow-up");
+    }
+  }
+
+  function toggleSettings() {
+    var x = document.getElementById("settings");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
     }
   }

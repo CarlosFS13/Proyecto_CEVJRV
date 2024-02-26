@@ -17,9 +17,30 @@
 .pc-container {
   display: none;
 }
-
 /* --------------  */
 
+/* 
+    Settings
+*/
+.settings{
+  display: none;
+  justify-content: space-evenly;
+  background-color: #32322c;
+  border-bottom: 2px solid #10b5bf;
+  color: #fffffc;
+}
+.settings_div{
+  display: flex;
+  flex-direction: column;
+}
+label {
+  vertical-align: middle;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+}
+/* --------------  */
 
 /* 
     Menú Móvil 
@@ -95,7 +116,7 @@ a {
   color: #10b5bf;
 }
 
-a:visited {
+a:visited:not(.excluded) {
   color: #DC965A;
 }
 th{
@@ -358,7 +379,7 @@ footer a {
 }
 /* --------------  */
 
-@media (min-width: 740px) {
+@media (min-width: 820px) {
   .mobile-container {
     display: none;
   }
@@ -443,24 +464,4 @@ footer a {
   footer section {
     margin: 2rem
   }
-
-  
-  /* ul.button_list {
-    text-align: center;
-  }
-  ul.button_list li {
-    margin-top: 0.4rem;
-    display: inline;
-    list-style-type: none;
-    width: 100%;
-  }
-  ul.button_list li a {
-    width: 100%;
-    height: 100%;
-    color: #fffffc;
-    text-decoration: none;
-  }
-  ul.button_list li a:visited {
-    color: #fffffc;
-  } */
 }

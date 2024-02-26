@@ -2,115 +2,155 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="mobile-container">
-    <nav class="topnav">
-      <a href="index.html" class="active">LOGO</a>
-      <ul id="myLinks">
-        <li><a href="gallery.html">GALERÍA</a></li>
-        <li><a href="curso.html">CURSO</a></li>
-    </ul>
-      <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-  </div>
+    <div class="mobile-container">
+        <nav class="topnav">
+            <a href="index.html" class="active">LOGO</a>
+            <ul id="myLinks">
+                <li><a href="gallery.html" class="excluded">GALERÍA</a></li>
+                <li><a href="curso.html" class="excluded">CURSO</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSettings()"><i class="fa fa-cog"
+                            aria-hidden="true"></i></a></li>
 
-  <div class="pc-container">
-    <nav class="topnav">
-      <a href="index.html" class="active">Logo</a>
-      <ul class="button_list">
-        <li><a href="gallery.html">GALERÍA</a></li>
-        <li><a href="curso.html">CURSO</a></li>
-    </ul>
-    </nav>
-  </div>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
 
-  <main>
-    <section id="introduccion" class="tarjeta">
-        <div class="tarj_header">
-            <h2>Oye, tú! Sí, tú! Te interesan los videojuegos y las nuevas técnologias?</h2>
-        </div>
-        <div class="tarj_body">
-            <img src="assets/images/headset.jpg" alt="HTC Vive headset">
-            <p>Pues sigue leyendo porque tenemos un curso de especialización del que estamos muy orgullosos!</p>
-        </div>
-    </section>
-    <section id="galeria" class="tarjeta">
-        <div class="tarj_header">
-            <h2>Menudo curro se han tirado nuestros alumnos</h2>
-        </div>
-        <div class="tarj_body">
-            <div class="project_selector">
-                <div id="previous" class="cycle">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-                <article class="project">
-                    <div class="project_header">
-                        <h3>Salvatore II Pizzaiolo</h3>
-                    </div>
-                    <div class="project_img">
-                        <img src="assets/images/pizza.jpg" class="miniature" alt="pizzaiolo image"></img>
-                    </div>
-                    <div class="project_desc">
-                        <p>Ayúda a tu tío y reparte pizzas en este divertido runner!</p>
-                    </div>
-                </article>
-                <div id="next" class="cycle">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-            </div>
-            <p>Estos son algunos de los trabajos de nuestros alumnos.</p>
-            <div class="see_more">
-                <ul class="button_list">
-                    <li>
-                        <a href="gallery.html">Quiero ver más</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="curso" class="tarjeta">
-        <div class="tarj_header">
-            <h2>Hora de ponernos serios</h2>
-        </div>
-        <div class="tarj_body">
+    <div class="pc-container">
+        <nav class="topnav">
+            <a href="index.html" class="active">Logo</a>
+            <ul class="button_list">
+                <li><a href="gallery.html">GALERÍA</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+                <li><a href="javascript:void(0);" onclick="toggleSettings()"><i class="fa fa-cog"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="settings" id="settings">
+        <div class="idiomas settings_div">
             <div>
-                <img src="assets/images/laptop.jpg" alt="laptop">
+                <input type="radio" id="es" name="idioma" value="es" checked>
+                <label for="es">Castellano</label>
             </div>
             <div>
-                <p>Hablemos de lo que necesitas para entrar, que aprenderás y cómo se organizará el curso.</p>
+                <input type="radio" id="ca" name="idioma" value="ca">
+                <label for="ca">Valenciano</label>
             </div>
-            <div class="see_more">
-                <ul class="button_list">
-                    <li>
-                        <a href="curso.html">Cuéntame más</a>
-                    </li>
-                </ul>
+            <div>
+                <input type="radio" id="en" name="idioma" value="en">
+                <label for="en">Inglés</label>
             </div>
         </div>
-    </section>
-</main>
-<nav id="bottom_nav">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-</nav>
-<footer>
-    <section id="footer_others">
-        <p><small>Correo: contacto@cdvjrv.es</small></p>
-        <p><small>Tlf: 659999336</small></p>
-        <p><small>Copyright 2024, Carlos Faus Salort</small></p>
-    </section>
-    <section id="footer_links">
-        <a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i> 	&#160;Instagram</a>
-        <a href="legal.html"> 	&#160;Política Legal y de Privacidad</a>
-    </section>
-</footer>
+        <div class="temas settings_div">
+            <div>
+                <input type="radio" id="dark" name="tema" value="dark" checked>
+                <label for="dark">Oscuro</label>
+            </div>
+            <div>
+                <input type="radio" id="light" name="tema" value="light">
+                <label for="light">Claro</label>
+            </div>
+            <div>
+
+                <input type="radio" id="contrast" name="tema" value="contrast">
+                <label for="contrast">Alto Contraste</label>
+            </div>
+        </div>
+
+
+
+    </div>
+    <main>
+        <section id="introduccion" class="tarjeta">
+            <div class="tarj_header">
+                <h2>Oye, tú! Sí, tú! Te interesan los videojuegos y las nuevas técnologias?</h2>
+            </div>
+            <div class="tarj_body">
+                <img src="assets/images/headset.jpg" alt="HTC Vive headset">
+                <p>Pues sigue leyendo porque tenemos un curso de especialización del que estamos muy orgullosos!
+                    Un curso donde aprenderás trabajando en proyectos como los de aqui abajo.
+                </p>
+            </div>
+        </section>
+        <section id="galeria" class="tarjeta">
+            <div class="tarj_header">
+                <h2>Menudo curro se han tirado nuestros alumnos</h2>
+            </div>
+            <div class="tarj_body">
+                <div class="project_selector">
+                    <div id="previous" class="cycle">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+                    <article class="project">
+                        <div class="project_header">
+                            <h3>Salvatore II Pizzaiolo</h3>
+                        </div>
+                        <div class="project_img">
+                            <img src="assets/images/pizza.jpg" class="miniature" alt="pizzaiolo image"></img>
+                        </div>
+                        <div class="project_desc">
+                            <p>Ayúda a tu tío y reparte pizzas en este divertido runner!</p>
+                        </div>
+                    </article>
+                    <div id="next" class="cycle">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                <p>Estos son algunos de los trabajos de nuestros alumnos.</p>
+                <div class="see_more">
+                    <ul class="button_list">
+                        <li>
+                            <a href="gallery.html">Quiero ver más</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="curso" class="tarjeta">
+            <div class="tarj_header">
+                <h2>Hora de ponernos serios</h2>
+            </div>
+            <div class="tarj_body">
+                <div>
+                    <img src="assets/images/laptop.jpg" alt="laptop">
+                </div>
+                <div>
+                    <p>Hablemos de lo que necesitas para entrar, que aprenderás y cómo se organizará el curso.</p>
+                </div>
+                <div class="see_more">
+                    <ul class="button_list">
+                        <li>
+                            <a href="curso.html">Cuéntame más</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav id="bottom_nav">
+        <a href="#"><i class="fa fa-arrow-up"></i></a>
+    </nav>
+    <footer>
+        <section id="footer_others">
+            <p><small>Correo: contacto@cdvjrv.es</small></p>
+            <p><small>Tlf: 659999336</small></p>
+            <p><small>Copyright 2024, Carlos Faus Salort</small></p>
+        </section>
+        <section id="footer_links">
+            <a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i> &#160;Instagram</a>
+            <a href="legal.html"> &#160;Política Legal y de Privacidad</a>
+        </section>
+    </footer>
 
 </body>
 <script src="js/action.js"></script>
