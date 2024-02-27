@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -36,6 +37,7 @@
             </ul>
         </nav>
     </div>
+
     <div class="settings" id="settings">
         <div class="idiomas settings_div">
             <div>
@@ -68,7 +70,7 @@
         </div>
     </div>
     <main>
-        <section id="introduccion" class="tarjeta">
+        <section id="introduccion" class="tarjeta wow animate__backInLeft">
             <div class="tarj_header">
                 <h2>Oye, tú! Sí, tú! Te interesan los videojuegos y las nuevas técnologias?</h2>
             </div>
@@ -79,7 +81,7 @@
                 </p>
             </div>
         </section>
-        <section id="galeria" class="tarjeta">
+        <section id="galeria" class="tarjeta wow animate__backInRight">
             <div class="tarj_header">
                 <h2>Menudo curro se han tirado nuestros alumnos</h2>
             </div>
@@ -113,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section id="curso" class="tarjeta">
+        <section id="curso" class="tarjeta wow animate__backInLeft">
             <div class="tarj_header">
                 <h2>Hora de ponernos serios</h2>
             </div>
@@ -151,5 +153,13 @@
 
 </body>
 <script src="js/action.js"></script>
-
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+        {
+            animateClass: 'animate__animated' //updated default animate 4.+
+        }
+    )
+    wow.init();
+</script>
 </html>

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>CE VJ RV</title>
 </head>
+
 <body>
     <div class="mobile-container">
         <nav class="topnav">
@@ -67,7 +70,7 @@
         </div>
     </div>
     <main>
-        <section id="requisitos" class="tarjeta">
+        <section id="requisitos" class="tarjeta wow animate__backInRight">
             <div class="tarj_header">
                 <h2>Requisitos académicos</h2>
             </div>
@@ -75,9 +78,9 @@
                 <p>Un grado superior en Informatica (DAM/DAW/ASIX) o un grado superior en Imagén y Sónido</p>
             </div>
         </section>
-        <section id="asignaturas" class="tarjeta">
+        <section id="asignaturas" class="tarjeta wow animate__backInLeft">
             <div class="tarj_header">
-                <h2>Horas  lectivas y asignaturas</h2>
+                <h2>Horas lectivas y asignaturas</h2>
             </div>
             <div class="tarj_body">
                 <div>
@@ -94,9 +97,9 @@
                 </div>
             </div>
         </section>
-        <section id="herramientas" class="tarjeta">
+        <section id="herramientas" class="tarjeta wow animate__backInRight">
             <div class="tarj_header">
-                <h2>Herramientas y  que vas a aprender a usar</h2>
+                <h2>Herramientas y que vas a aprender a usar</h2>
             </div>
             <div class="tarj_body">
                 <ul>
@@ -121,12 +124,21 @@
             <p><small>Copyright 2024, Carlos Faus Salort</small></p>
         </section>
         <section id="footer_links">
-            <a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i> 	&#160;Instagram</a>
-            <a href="legal.html"> 	&#160;Política Legal y de Privacidad</a>
+            <a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i> &#160;Instagram</a>
+            <a href="legal.html"> &#160;Política Legal y de Privacidad</a>
         </section>
     </footer>
-    
-    </body>
-    <script src="js/action.js"></script>
+
+</body>
+<script src="js/action.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+        {
+            animateClass: 'animate__animated' //updated default animate 4.+
+        }
+    )
+    wow.init();
+</script>
 
 </html>
